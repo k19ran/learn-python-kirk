@@ -14,3 +14,13 @@ Octet1         Octet2         Octet3         Octet4
 
 Four columns, fifteen characters wide, a header column, data centered in the column.
 '''
+ip_addr=input("Please enter an IP address:")
+my_var = ip_addr.split('.')
+print("{:^20}{:^20}{:^20}{:^20}".format("Octet1", "Octet2", "Octet3", "Octet4"))
+print('-'*80)
+#print("{:^20}{:^20}{:^20}{:^20}".format(my_var[0],my_var[1],my_var[2],my_var[3]))
+print("{:^20}{:^20}{:^20}{:^20}".format(*my_var))
+print("{:^20}{:^20}{:^20}{:^20}".format(hex(int(my_var[0])),hex(int(my_var[1])),hex(int(my_var[2])),hex(int(my_var[3]))))
+print("{:^20}{:^20}{:^20}{:^20}".format(bin(int(my_var[0])),bin(int(my_var[1])),bin(int(my_var[2])),bin(int(my_var[3]))))
+print('-'*80)
+print()
