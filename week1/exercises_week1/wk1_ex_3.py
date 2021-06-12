@@ -17,6 +17,6 @@ SECOND_VAR = u'2a01:89c0:0:a012::2'
 TH3_ird_VAR = u'2a01:89c0:0:a012::2'
 #print(type(first_var))
 print("is var1 is equal to var2: {}".format(first_var == SECOND_VAR))
-print("is var1 not equalt to var1: {}".format(first_var != TH3_ird_VAR))
+print("is var1 not equalt to var3: {}".format(first_var != TH3_ird_VAR))
 
 #print(first_var,SECOND_VAR,TH3_ird_VAR)
