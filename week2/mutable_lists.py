@@ -1,0 +1,16 @@
+my_list = ['hello','whatever']
+print(id(my_list))
+print(my_list)
+my_new_list = my_list
+print(my_new_list)
+print(id(my_new_list))
+print(id(my_list))
+my_new_list.append('how')
+print(my_new_list)
+print(my_list)
+print(id(my_new_list))
+print(id(my_list))
+my_list.append('me')
+print(my_list)
+print(id(my_list))
+print(my_new_list)
