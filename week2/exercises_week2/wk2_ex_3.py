@@ -13,3 +13,35 @@ as the separator.
 
 Write this string containing the three ARP entries out to a file named "arp_entries.txt"
 '''
+from pprint import pprint
+banner = "-"*80
+
+with open("C:\learn-automation\learn-python-kirk\week2\show_arp.txt") as file:
+    output = file.readlines()
+
+pprint(output)
+print(banner)
+sliced_output = output[1:]
+pprint(sliced_output)
+print(banner)
+sliced_output.sort()
+
+new_arp_list = sliced_output[0:3]
+pprint(new_arp_list)    
+print(banner)
+
+join_list = "\n".join(new_arp_list)
+pprint(join_list)
+print(banner)
+
+with open("C:\learn-automation\learn-python-kirk\week2\extra_arp_str.txt", mode ='w') as new_file:
+    new_file.write(join_list)
+#new_file.close()
+with open("C:\learn-automation\learn-python-kirk\week2\extra_arp_str.txt", mode ='r') as newest_file:
+    newest_file = newest_file.read()
+
+pprint(newest_file)
+#new_file.close()
+
+
+
